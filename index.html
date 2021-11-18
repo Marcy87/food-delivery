@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Pedido</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de caixa para food delivery</h1>
+    </header>
+    <main>
+        <div id="conteiner">
+
+            <section class="coluna1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Descrição produto</th>
+                            <th scope="col" class="largura">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>Pizza</td>
+                            <td class="largura">R$ 60,00</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Big Mac</td>
+                            <td class="largura">R$ 20,00</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Hamburguer Normal</td>
+                            <td class="largura">R$ 10,00</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Pão na chapa</td>
+                            <td class="largura">R$ 5,00</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Cheeseburguer</td>
+                            <td class="largura">R$ 6,00</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Refrigerante</td>
+                            <td class="largura">R$ 8,00</td>
+                        </tr>
+                    </tbody>
+                    <caption>
+                        Escolhe o Código do Cardápio
+                    </caption>
+                </table>
+            </section>
+
+            <section class="coluna2">
+                <form>
+                    <fieldset>
+                        <legend>Pedido</legend>
+                        <p>
+                            <label for="codigo">Insira Código:</label>
+                            <select name="codigo" id="codigo">
+                                <option value="">Preencha</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                        </p>
+                        <br>
+                        <p>
+                            <label for="quantidade">Escolhe Quantidade:</label>
+                            <input type="number" name="quantidade" id="quantidade">
+                        </p>
+                        <br>
+                        <p>
+                            <label for="cupom">Cupom:</label>
+                            <select name="cupom" id="cupom">
+                                <option value="">Preencha</option>
+                                <option value="cupom10">Cupom de 10%</option>
+                                <option value="cupom20">Cupom de 20%</option>
+                                <option value="cupom25">Cupom de 25%</option>
+                            </select>
+                        </p>
+                        <br>
+                        <p>
+                            <label for="desconto">Desconto:</label>
+                            <input type="text" name="desconto" id="desconto">
+                        </p>
+                        <br>
+                        <p>
+                            <label for="frete">Frete:</label>
+                            <select name="frete" id="frete">
+                                <option value="">Preencha</option>
+                                <option value="frete5km">Frete até 5km é R$5,00</option>
+                                <option value="frete10km">Frete até 10km é R$10,00</option>
+                                <option value="frete15km">Frete até 15km é R$15,00</option>
+                            </select>
+                        </p>
+                        <br>
+                        <div class="button">
+                            <button type="button" name="btnresumo" id="btnresumo">Resumo</button>
+                            <button type="button" name="btnconfirmar" id="btnconfirmar">Confirmar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="coluna3">
+                <h2>Resumo do Pedido:</h2>
+                <br>
+                <div class="msn">
+                    <p id="mensagem1"></p>
+                    <p id="mensagem2"></p>
+                    <p id="mensagem3"></p>
+                    <p id="mensagem4"></p>
+                    <p id="mensagem5"></p>
+                    <p id="mensagem6"></p>
+                    <p id="mensagem7"><strong></strong></p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy;<strong>Autor: </strong>Marcello Di Silvestro &nbsp; <strong>E-mail:</strong><a
+            href="mailto:marcellodisilvestro@outlook.com">marcellodisilvestro@outlook.com</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
